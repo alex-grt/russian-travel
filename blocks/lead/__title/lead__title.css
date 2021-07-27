@@ -1,0 +1,30 @@
+.lead__title {
+  max-width: 720px;
+  min-height: 200px;
+  margin: 0 auto 32px;
+  color: #fff;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.04;
+}
+
+@media screen and (max-width: 690px) {
+  /* В интервале 320-690 заголовок перестаёт вмещаться и появляется
+  полоса прокрутки. Поэтому скорректирован размер шрифта. */
+  .lead__title {
+    min-height: min-content;
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lead__title {
+    max-width: 288px;
+    min-height: 88px;
+    margin: 0 auto 16px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}

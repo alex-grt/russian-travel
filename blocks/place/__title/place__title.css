@@ -1,0 +1,32 @@
+.place__title {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.06;
+}
+
+@media screen and (max-width: 768px) {
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  /* В интервале 320-690 заголовок сайта перестаёт вмещаться и появляется
+  полоса прокрутки. Поэтому скорректирован размер всех шрифтов заголовков,
+  чтобы сохранять визуальную иерархию. */
+  .place__title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__title {
+    margin: 0 16px;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}

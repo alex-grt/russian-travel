@@ -1,0 +1,32 @@
+.intro__title {
+  max-width: 690px;
+  min-height: 58px;
+  margin: 0 0 40px 0;
+  color: #fff;
+  font-size: 54px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.07;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__title {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  /* В интервале 320-690 заголовок сайта перестаёт вмещаться и появляется
+  полоса прокрутки. Поэтому скорректирован размер всех шрифтов заголовков,
+  чтобы сохранять визуальную иерархию. */
+  .intro__title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}

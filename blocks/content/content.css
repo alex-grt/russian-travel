@@ -1,0 +1,14 @@
+.content {
+  padding: 56px 0 0;
+  background-color: #2a2c2f;
+  color: #fff;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding-top: 48px;
+  }
+}

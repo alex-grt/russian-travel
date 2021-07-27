@@ -1,0 +1,22 @@
+.places {
+  max-width: 984px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+  background-color: #2a2c2f;
+  color: #fff;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    gap: 73px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places {
+    gap: 50px;
+  }
+}

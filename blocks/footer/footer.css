@@ -1,0 +1,21 @@
+.footer {
+  max-width: 1184px;
+  min-height: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+  background-color: #2a2c2f;
+  color: #fff;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 520px) {
+  /* При разрешении менее 520 футер перестаёт корректно
+  отображаться в 1 или 2 строки. */
+  .footer {
+    flex-direction: column;
+  }
+}
