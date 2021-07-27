@@ -1,8 +1,9 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts/fonts.css');
+/* блок page-area */
+@import url('../blocks/page-area/__alignment/page__alignment.css');
 /* блок page */
 @import url('../blocks/page/page.css');
-@import url('../blocks/page/__alignment/page__alignment.css');
 @import url('../blocks/page/__header/page__header.css');
 @import url('../blocks/page/__content/page__content.css');
 @import url('../blocks/page/__footer/page__footer.css');
