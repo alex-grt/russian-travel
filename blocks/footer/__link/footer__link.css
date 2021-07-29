@@ -1,6 +1,6 @@
 .footer__link {
-  height: 18px;
   margin: 0;
+  transition: .4s;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -14,11 +14,10 @@
   opacity: .8;
 }
 
-@media screen and (max-width: 520px) {
-  /* При разрешении менее 520 футер перестаёт корректно
+@media screen and (max-width: 530px) {
+  /* При разрешении менее 530 футер перестаёт корректно
   отображаться в 1 или 2 строки. */
   .footer__link {
-    height: 24px;
     font-size: 24px;
     line-height: 1;
   }

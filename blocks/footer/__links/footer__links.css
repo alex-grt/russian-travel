@@ -1,11 +1,12 @@
 .footer__links {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
 }
 
-@media screen and (max-width: 520px) {
-  /* При разрешении менее 520 футер перестаёт корректно
+@media screen and (max-width: 530px) {
+  /* При разрешении менее 530 футер перестаёт корректно
   отображаться в 1 или 2 строки. */
   .footer__links {
     flex-direction: column;

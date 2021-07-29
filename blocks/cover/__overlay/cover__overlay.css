@@ -4,6 +4,7 @@
   padding: 245px 0 0;
   box-sizing: border-box;
   background-color: rgba(42, 44, 47, .3);
+  transition: .4s;
 }
 
 .cover__overlay:hover {

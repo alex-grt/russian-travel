@@ -1,6 +1,10 @@
 .cover {
   max-width: 1184px;
   background-color: #2a2c2f;
+  background-image: url('../../images/cover-trains.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: #fff;
   font-family: 'Inter', 'Arial', sans-serif;
 }

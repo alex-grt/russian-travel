@@ -1,6 +1,5 @@
 .header {
   max-width: 1184px;
-  height: 52px;
   display: flex;
   justify-content: space-between;
   background-color: #2a2c2f;
@@ -8,10 +7,4 @@
   font-family: 'Inter', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    height: 42px;
-  }
 }

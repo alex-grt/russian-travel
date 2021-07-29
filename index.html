@@ -15,11 +15,10 @@
     <header class="header page__header">
       <img class="header__logo" src="./images/header-logo.svg" alt="логотип с картой и
       подписью Россия">
-      <div class="header__links">
-        <a class="header__lang-link header__lang-link_decoration_underline" href="#"
-        lang="en">Ru</a>
-        <a class="header__lang-link" href="#" lang="en">En</a>
-      </div>
+      <ul class="header__links undecorated-list">
+        <li><a class="header__lang-link header__lang-link_active" href="#" lang="en">Ru</a></li>
+        <li><a class="header__lang-link" href="#" lang="en">En</a></li>
+      </ul>
     </header>
     <!-- секция Content -->
     <main class="content page__content">
@@ -27,9 +26,11 @@
       <section class="lead content__lead">
         <h1 class="lead__title">Путешествия по России</h1>
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-        <img class="lead__image" src="./images/lead-polka.jpg" alt="метки пути на фоне
-        боковой полки вагона">
-        <p class="lead__caption">ваша полка — верхняя</p>
+        <figure class="lead__illustration">
+          <img class="lead__image" src="./images/lead-polka.jpg" alt="метки пути на фоне
+          боковой полки вагона">
+          <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+        </figure>
       </section>
       <!-- секция Intro -->
       <article class="intro content__intro">
@@ -42,7 +43,7 @@
           Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку
           троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной
           стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
-        <ul class="intro__list">
+        <ul class="intro__list undecorated-list">
           <li>Часовых поясов <span class="intro__list-digits">11</span></li>
           <li>Объектов природного наследия ЮНЕСКО <span class="intro__list-digits">12</span></li>
           <li>Объектов культурного наследия ЮНЕСКО <span class="intro__list-digits">16</span></li>
@@ -51,33 +52,38 @@
         </ul>
       </article>
       <!-- секция Photo-Grid -->
-      <section class="photo-grid content__photo-grid" aria-label="Фотогалерея">
-        <img class="photo-grid__item" src="./images/photo-grid-train.jpg" alt="вид из поезда">
-        <img class="photo-grid__item" src="./images/photo-grid-atharva-tulsi.jpg"
-        alt="заснеженные горы в облаках">
-        <img class="photo-grid__item" src="./images/photo-grid-tuman.jpg" alt="утренний
-        туман над полем">
-        <img class="photo-grid__item" src="./images/photo-grid-sochi.jpg" alt="лес в тумане
-        близ Сочи">
-        <img class="photo-grid__item" src="./images/photo-grid-arisa.jpg" alt="автомобиль
-        на льду">
-        <img class="photo-grid__item" src="./images/photo-grid-baikal.jpg" alt="берег Байкала">
-        <img class="photo-grid__item" src="./images/photo-grid-elbrus.jpg" alt="заснеженный
-        Эльбрус">
-        <img class="photo-grid__item" src="./images/photo-grid-kondratiev.jpg" alt="знак
-        пешеходного перехода на фоне тетраэдров волнолома">
-        <img class="photo-grid__item" src="./images/photo-grid-kamchatka-1.jpg" alt="сопки
-        Камчатки в тумане">
-        <img class="photo-grid__item" src="./images/photo-grid-kamchatka-2.jpg" alt="сопка
-        Камчатки, освещённая солнцем">
-        <img class="photo-grid__item" src="./images/photo-grid-baikal-2.jpg" alt="скалы
-        Байкала">
-        <img class="photo-grid__item" src="./images/photo-grid-ergaki.jpg" alt="парк Ергаки
-        в тумане">
+      <section class="content__photo-grid" aria-label="Фотогалерея">
+        <ul class="photo-grid undecorated-list content__photo-grid-alignment">
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-train.jpg" alt="вид из поезда"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-atharva-tulsi.jpg" alt="заснеженные горы в облаках"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-tuman.jpg" alt="утренний туман над полем"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-sochi.jpg" alt="лес в тумане близ Сочи"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-arisa.jpg" alt="автомобиль на льду"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-baikal.jpg" alt="берег Байкала"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-elbrus.jpg" alt="заснеженный Эльбрус"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-kondratiev.jpg" alt="знак пешеходного перехода на фоне
+            тетраэдров волнолома"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-kamchatka-1.jpg" alt="сопки Камчатки в тумане"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-kamchatka-2.jpg" alt="сопка Камчатки, освещённая солнцем"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-baikal-2.jpg" alt="скалы Байкала"></li>
+          <li class="undecorated-list__item"><img class="photo-grid__item"
+            src="./images/photo-grid-ergaki.jpg" alt="парк Ергаки в тумане"></li>
+        </ul>
       </section>
       <!-- секция Places -->
-      <section class="places content__places">
-        <div class="place">
+      <section class="places content__places" aria-label="Заметки об интересных местах">
+        <article class="place">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -95,12 +101,13 @@
               городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы
               и запах стального, прохладного моря.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Кольский</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
-            <a class="place__link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank">National Geographic</a>
+            <a class="place__link" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+            target="_blank">National Geographic</a>
           </div>
           <img class="place__image" src="./images/place-kolsky.jpg" alt="побережье Кольского полуострова">
           <div class="place__text">
@@ -114,12 +121,13 @@
               вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает
               сбываться с билетом в Мурманск.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Алтай</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
-            <a class="place__link" href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" target="_blank">Facebook</a>
+            <a class="place__link" href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+            target="_blank">Facebook</a>
           </div>
           <img class="place__image" src="./images/place-altai.jpg" alt="ноутбук на веранде с видом на лес">
           <div class="place__text">
@@ -132,8 +140,8 @@
               Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули.
               И знаменитые манулы — тоже обитатели Алтайского края.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Зимний Байкал</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -150,8 +158,8 @@
               В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой
               рекорд — 197.011 км/ч.</p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -168,29 +176,29 @@
               километров не встретишь тропы. А на редких тропинках деревья в паре
               метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
           </div>
-        </div>
+        </article>
       </section>
       <!-- секция Cover -->
       <section class="cover content__cover">
         <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
-          <div class="cover__background">
-            <div class="cover__overlay">
-              <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
-              <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от
-                столицы до Байкала на электричках.</p>
-            </div>
+          <div class="cover__overlay">
+            <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
+            <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от
+              столицы до Байкала на электричках.</p>
           </div>
         </a>
       </section>
     </main>
     <!-- секция Footer -->
     <footer class="footer page__footer">
-      <nav class="footer__links">
-        <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a>
-        <a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
-        <a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
-        <a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
-        <a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a>
+      <nav class="footer__navigation">
+        <ul class="footer__links undecorated-list">
+          <li><a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a></li>
+          <li><a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Погода</a></li>
+          <li><a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a></li>
+          <li><a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a></li>
+          <li><a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a></li>
+        </ul>
       </nav>
       <p class="footer__copyright">&copy; 2021. Александр Карякин</p>
     </footer>

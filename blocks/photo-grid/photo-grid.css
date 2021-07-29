@@ -32,7 +32,6 @@
   .photo-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
-    gap: 16px;
   }
 }
 
